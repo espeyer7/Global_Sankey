@@ -1,0 +1,38 @@
+"links":[
+{"source":0,"target":1,"value":372576},
+{"source":13,"target":0,"value":2345390.00},
+{"source":14,"target":1,"value":126421},
+{"source":2,"target":1,"value":126421},
+{"source":16,"target":12,"value":0.018}
+]}
+
+
+
+//list through stimulants for imports 
+{"source":13,"target":1,"value": 372576.00},
+{"source":14,"target":1,"value": 58435.00},
+{"source":15,"target":1,"value": 126421.00},
+{"source":16,"target":1,"value": 78887.00},
+{"source":17,"target":1,"value": 85449.88},
+{"source":18,"target":1,"value": 12093.00},
+{"source":19,"target":1,"value": 6917.00},
+{"source":20,"target":1,"value": 65493.00},
+{"source":21,"target":1,"value": 123180.00},
+{"source":22,"target":1,"value": 1104.00},
+{"source":23,"target":1,"value": 76997.60},
+{"source":24,"target":1,"value": 20135.00}
+
+
+//list through stimulants for production
+{"source":13,"target":0,"value":2345390.00},
+{"source":14,"target":0,"value":796699.00},
+{"source":15,"target":0,"value":794729.72},
+{"source":16,"target":0,"value":155339.00},
+{"source":17,"target":0,"value":269086.47},
+{"source":18,"target":0,"value":68111.00},
+{"source":19,"target":0,"value":15321.00},
+{"source":20,"target":0,"value":1082285.00},
+{"source":21,"target":0,"value":631789.00},
+{"source":22,"target":0,"value":2083715.00},
+{"source":23,"target":0,"value":262371.36},
+{"source":24,"target":0,"value":18413.00},

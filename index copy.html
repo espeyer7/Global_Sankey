@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html class="ocks-org">
 <meta charset="utf-8">
-<title>World Food and Commodity FLows</title>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="180"><circle class="little" cx="164.3648458365351" cy="95.38489682134241" r="12" fill="#ef133b"/><circle class="little" cx="188.00285381264985" cy="123.11646922957152" r="12" fill="#d4d4d5"/><circle class="little" cx="58.67701635695994" cy="56.175790945999324" r="12" fill="#c7d81b"/></svg>
+<title>Sankey Diagram</title>
+<!-- <base href="http://bost.ocks.org/mike/sankey/" target="_blank"> -->
 
 <style>
 @import url(ocks.css);
@@ -32,24 +31,30 @@
 
 
 
-<h1>World Food and Commodity Flows</h1>
+<h1>Sankey Diagrams</h1>
 
-<p id="chart"></p>
-
+<p id="chart">
 
 <aside>Drag to rearrange nodes.</aside>
 
+<p class="attribution">Source: <a href="https://flowcharts.llnl.gov/content/energy/energy_archive/energy_flow_2012/2012new2012newUSEnergy.png">Department of Energy and Lawrence Livermore National Laboratory</a>, <a href="http://tamc.github.com/Sankey/">Tom Counsell</a>.
 
-Based on work by <a href="http://github.com/DanielJWood" rel="author">Dan Wood</a> and <a href="http://bost.ocks.org/mike/sankey/" rel="author">Mike Bostock</a> using the <a href="http://d3js.org" rel="author">D3 Sankey plugin</a>.
+<aside>Sankey diagrams are closely related to <a href="http://en.wikipedia.org/wiki/Alluvial_diagram">alluvial diagrams</a>, which show how network structure changes over time.</aside>
 
-<p>By Emily Speyer | Metabolic | Summer 2015</p>
+
+<p>Thanks to Mike Bostock, whose <a href="http://bost.ocks.org/mike/sankey/">D3 Sankey plugin</a> was used to help build this visualisation.</p>
+
+<footer>
+  <aside>November 25, 2013</aside>
+  <a href="http://github.com/DanielJWood" rel="author">Based on work by Dan Wood</a>
+</footer>
 
 <script src="http://d3js.org/d3.v2.min.js?2.9.1"></script>
 <script src="sankey.js"></script>
 <script>
 var margin = {top: 1, right: 1, bottom: 6, left: 1},
-    width = 2000 //- margin.left - margin.right,
-    height = 900 //- margin.top - margin.bottom;
+    width = 960 - margin.left - margin.right,
+    height = 900 - margin.top - margin.bottom;
 var formatNumber = d3.format(",.3r"),
     format = function(d) { return formatNumber(d) + " TWh"; },
     color = d3.scale.category20();
@@ -123,6 +128,4 @@ d3.json("data.json", function(energy) {
     link.attr("d", path);
   }
 });
-
-
 </script>

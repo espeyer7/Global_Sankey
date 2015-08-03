@@ -36,7 +36,22 @@
 {"name":"Vegetable Oils"},
 {"name":"Oil Cakes"},
 {"name":"Sugar"},
-{"name":"Alcohol"}
+{"name":"Alcohol"}, 
+{"name":"Open Range Land"}, 
+{"name":"Meat Production"}, 
+{"name":"Fats Production"}, 
+{"name":"Hides and Skins Production"}, 
+{"name":"Milk, Primary Production"}, 
+{"name":"Eggs Production"}, 
+{"name":"Honey Production"}, 
+{"name":"Wool & Hair Production"},
+{"name":"Silk Production"},
+{"name":"Animals"},
+{"name":"Food- Animal"},
+{"name":"Processing- Animal"},
+{"name":"Feed- Animal"},
+{"name":"Other- Animal"},
+{"name":"Waste- Animal"}
 ],
 
 "links":[
@@ -147,6 +162,56 @@
 
 {"source":37,"target":1,"value":257.96},
 {"source":37,"target":4,"value":31.31},
-{"source":37,"target":5,"value":1.70}
+{"source":37,"target":5,"value":1.70},
+
+{"source":38,"target":19,"value":3600},
+{"source":19,"target":3,"value":314.06},
+
+{"source":3,"target":47,"value":3107.401},
+
+{"source":47,"target":39,"value":314.06},
+{"source":47,"target":40,"value":22.70},
+{"source":47,"target":41,"value":12.67},
+{"source":47,"target":42,"value":738.11},
+{"source":47,"target":43,"value":70.40},
+{"source":47,"target":44,"value":1.57},
+{"source":47,"target":45,"value":2.96},
+{"source":47,"target":46,"value":0.72},
+
+{"source":39,"target":48,"value":0.31},
+{"source":39,"target":49,"value":455.00},
+{"source":39,"target":50,"value":1.12},
+{"source":39,"target":51,"value":2.69},
+{"source":39,"target":52,"value":0.95}, 
+
+{"source":40,"target":48,"value":0.01},
+{"source":40,"target":49,"value":217.00},
+{"source":40,"target":50,"value":1.59},
+{"source":40,"target":51,"value":10.53},
+{"source":40,"target":52,"value":0.04}, 
+
+{"source":41,"target":51,"value":12.67},
+{"source":41,"target":52,"value":0.50}, 
+
+{"source":42,"target":48,"value":0.62},
+{"source":42,"target":49,"value":26.00},
+{"source":42,"target":50,"value":78.64},
+{"source":42,"target":51,"value":16.38},
+{"source":42,"target":52,"value":18.22}, 
+
+{"source":43,"target":48,"value":0.06},
+{"source":43,"target":50,"value":0.07},
+{"source":43,"target":51,"value":0.78},
+{"source":43,"target":52,"value":3.25}, 
+
+{"source":44,"target":49,"value":19.00},
+
+{"source":45,"target":49,"value":1.41},
+{"source":45,"target":51,"value":2.85},
+
+{"source":46,"target":49,"value":0.90},
+{"source":46,"target":51,"value":0.72},
+
+{"source":49,"target":48,"value":0.72}
 
 ]}

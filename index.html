@@ -46,8 +46,10 @@ var svg = d3.select("#chart").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 var sankey = d3.sankey()
-    .nodeWidth(15)
-    .nodePadding(20)
+    //.nodeWidth(15)
+    .nodeWidth(15*5)
+    //.nodePadding(20)
+    .nodePadding(80)
     .size([width, height]);
 var path = sankey.link();
 d3.json("data.json", function(energy) {
@@ -79,9 +81,10 @@ d3.json("data.json", function(energy) {
       .on("dragstart", function() { this.parentNode.appendChild(this); })
       .on("drag", dragmove));
   node.append("rect")
-      .attr("height", function(d) { return d.dy; })
+      //.attr("height", function(d) { return d.dy; })
       //.attr("height", 200)
-      .attr("width", sankey.nodeWidth()*5)
+      .attr("height", function(d) {return d.dy;})
+      .attr("width", sankey.nodeWidth())
       //.attr("width", 100)
       .style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
       .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })

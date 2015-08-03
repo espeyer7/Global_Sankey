@@ -3,8 +3,6 @@
 <meta charset="utf-8">
 <title>World Food and Commodity FLows</title>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="180"><circle class="little" cx="164.3648458365351" cy="95.38489682134241" r="12" fill="#ef133b"/><circle class="little" cx="188.00285381264985" cy="123.11646922957152" r="12" fill="#d4d4d5"/><circle class="little" cx="58.67701635695994" cy="56.175790945999324" r="12" fill="#c7d81b"/></svg>
-
 <style>
 @import url(ocks.css);
 #chart {
@@ -30,26 +28,15 @@
 </style>
 <body>
 
-
-
-<h1>World Food and Commodity Flows</h1>
-
 <p id="chart"></p>
 
-
-<aside>Drag to rearrange nodes.</aside>
-
-
-Based on work by <a href="http://github.com/DanielJWood" rel="author">Dan Wood</a> and <a href="http://bost.ocks.org/mike/sankey/" rel="author">Mike Bostock</a> using the <a href="http://d3js.org" rel="author">D3 Sankey plugin</a>.
-
-<p>By Emily Speyer | Metabolic | Summer 2015</p>
 
 <script src="http://d3js.org/d3.v2.min.js?2.9.1"></script>
 <script src="sankey.js"></script>
 <script>
 var margin = {top: 1, right: 1, bottom: 6, left: 1},
     width = 2000 //- margin.left - margin.right,
-    height = 900 //- margin.top - margin.bottom;
+    height = 1414 //- margin.top - margin.bottom;
 var formatNumber = d3.format(",.3r"),
     format = function(d) { return formatNumber(d) + " TWh"; },
     color = d3.scale.category20();

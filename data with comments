@@ -1,0 +1,298 @@
+{"nodes":[
+{"name":"Land Allocation"},
+{"name":"Food"},
+{"name":"Processing"},
+{"name":"Feed"},
+{"name":"Other"},
+{"name":"Waste"},
+{"name":"Cereal Production"},
+{"name":"Starchy Roots Production"},
+{"name":"Oil Crops Production"},
+{"name":"Pulses Production"},
+{"name":"Nuts Production"},
+{"name":"Vegetables Production"},
+{"name":"Fruits Production"},
+{"name":"Sugar Crops Production"},
+{"name":"Stimulants Production"},
+{"name":"Spices Production"},
+{"name":"Fibers Production"},
+{"name":"Tobacco Production"},
+{"name":"Rubber Production"},
+{"name":"Fodder Production"},
+{"name":"Cereal Yield"},
+{"name":"Starchy Roots Yield"},
+{"name":"Oil Crops Yield"},
+{"name":"Pulses Yield"},
+{"name":"Nuts Yield"},
+{"name":"Vegetables Yield"},
+{"name":"Fruits Yield"},
+{"name":"Sugar Crops Yield"},
+{"name":"Stimulants Yield"},
+{"name":"Spices Yield"},
+{"name":"Fibers Yield"},
+{"name":"Tobacco Yield"},
+{"name":"Rubber Yield"},
+{"name":"Fodder Yield"},
+{"name":"Vegetable Oils"},
+{"name":"Oil Cakes"},
+{"name":"Sugar"},
+{"name":"Alcohol"}, 
+{"name":"Open Range Land"}, 
+{"name":"Meat Production"}, 
+{"name":"Fats Production"}, 
+{"name":"Hides and Skins Production"}, 
+{"name":"Milk, Primary Production"}, 
+{"name":"Eggs Production"}, 
+{"name":"Honey Production"}, 
+{"name":"Wool & Hair Production"},
+{"name":"Silk Production"},
+{"name":"Animals"},
+{"name":"Food- Animal"},
+{"name":"Processing- Animal"},
+{"name":"Feed- Animal"},
+{"name":"Other- Animal"},
+{"name":"Waste- Animal"}, 
+{"name":"Primary Imports"}, 
+{"name":"Primary Exports"}, 
+{"name":"Processing Imports"}, 
+{"name":"Processing Exports"}
+],
+
+"links":[
+//YIELD calculated by multiplying the % of land used to produce this crop times total production
+{"source":0,"target":20,"value":5022.88},
+{"source":0,"target":21,"value":146.58},
+{"source":0,"target":22,"value":916.36},
+{"source":0,"target":23,"value":322.53},
+{"source":0,"target":24,"value":177.90},
+{"source":0,"target":25,"value":558.45},
+{"source":0,"target":26,"value":656.16},
+{"source":0,"target":27,"value":94.28},
+{"source":0,"target":28,"value":12.69},
+{"source":0,"target":29,"value":46.71},
+{"source":0,"target":30,"value":2.54},
+{"source":0,"target":31,"value":9.66},
+{"source":0,"target":33,"value":809.42},
+
+//production of crops 
+{"source":20,"target":6,"value":64991},
+{"source":21,"target":7,"value":20575},
+{"source":22,"target":8,"value":5042},
+{"source":23,"target":9,"value":1766},
+{"source":24,"target":10,"value":1344},
+{"source":25,"target":11,"value":70718},
+{"source":26,"target":12,"value":38660},
+{"source":27,"target":13,"value":37340},
+{"source":28,"target":14,"value":137},
+{"source":29,"target":15,"value":271},
+{"source":30,"target":16,"value":327.438},
+{"source":31,"target":17,"value":74.691},
+{"source":33,"target":19,"value":100856.2061},
+
+//crops to food 
+{"source":6,"target":1,"value":75139},
+{"source":7,"target":1,"value":14984},
+{"source":8,"target":1,"value":1372},
+{"source":9,"target":1,"value":2643},
+{"source":10,"target":1,"value":1576},
+{"source":11,"target":1,"value":62005},
+{"source":12,"target":1,"value":34627},
+{"source":13,"target":1,"value":3100},
+{"source":14,"target":1,"value":1091},
+{"source":15,"target":1,"value":452},
+
+//crops to processing
+{"source":6,"target":2,"value":621},
+{"source":7,"target":2,"value":98},
+{"source":8,"target":2,"value":8356},
+{"source":11,"target":2,"value":127},
+{"source":12,"target":2,"value":620},
+{"source":13,"target":2,"value":32323},
+{"source":17,"target":2,"value":-84.018},
+
+//crops to feed
+{"source":6,"target":3,"value":47866},
+{"source":7,"target":3,"value":184},
+{"source":8,"target":3,"value":154},
+{"source":9,"target":3,"value":329},
+{"source":11,"target":3,"value":172},
+{"source":12,"target":3,"value":357},
+{"source":13,"target":3,"value":1436},
+{"source":14,"target":3,"value":1},
+
+//crops to industry/other
+{"source":6,"target":4,"value":2605},
+{"source":7,"target":4,"value":912},
+{"source":8,"target":4,"value":159},
+{"source":9,"target":4,"value":22},
+{"source":10,"target":4,"value":44},
+{"source":11,"target":4,"value":112},
+{"source":12,"target":4,"value":377},
+{"source":13,"target":4,"value":147},
+{"source":14,"target":4,"value":29},
+{"source":15,"target":4,"value":58},
+{"source":16,"target":4,"value":410.842},
+{"source":17,"target":4,"value":484.224},
+{"source":18,"target":4,"value":105.285},
+
+//crops to waste
+{"source":6,"target":5,"value":8771},
+{"source":7,"target":5,"value":2506},
+{"source":8,"target":5,"value":289},
+{"source":9,"target":5,"value":109},
+{"source":10,"target":5,"value":4},
+{"source":11,"target":5,"value":6645},
+{"source":12,"target":5,"value":3415},
+{"source":13,"target":5,"value":138},
+{"source":14,"target":5,"value":3},
+{"source":15,"target":5,"value":10},
+{"source":17,"target":5,"value":0.724},
+
+//processing to processed commodities
+{"source":2,"target":34,"value":1876},
+{"source":2,"target":35,"value":4281.881},
+{"source":2,"target":36,"value":5220.567},
+{"source":2,"target":37,"value":1527},
+
+//first processed commodity to food, other and waste 
+{"source":34,"target":1,"value":4110},
+{"source":34,"target":4,"value":2916},
+{"source":34,"target":5,"value":2},
+
+//second processed commodity to food, other and waste 
+{"source":35,"target":3,"value":11123.214},
+{"source":35,"target":4,"value":91.549},
+
+//third processed commodity to food, other and waste 
+{"source":36,"target":1,"value":11062},
+{"source":36,"target":3,"value":1014.111},
+{"source":36,"target":4,"value":2184.107},
+{"source":36,"target":5,"value":10},
+
+//fourth processed commodity to food, other and waste 
+{"source":37,"target":1,"value":1481},
+{"source":37,"target":4,"value":603},
+{"source":37,"target":5,"value":1},
+
+//range land for animals 
+{"source":38,"target":19,"value":3600}, 
+//total fodder crop 
+{"source":19,"target":3,"value":100856.2061}, 
+
+//total livestock divided by 10000
+{"source":3,"target":47,"value":236329.1868},
+
+//production of animal products
+{"source":47,"target":39,"value":10206},
+{"source":47,"target":40,"value":131},
+{"source":47,"target":41,"value":749.03},
+{"source":47,"target":42,"value":27741},
+{"source":47,"target":43,"value":2272},
+{"source":47,"target":44,"value":82},
+{"source":47,"target":45,"value":304.632},
+{"source":47,"target":46,"value":4.367},
+
+//first animal product to food, processing, feed, other and waste
+{"source":39,"target":48,"value":13196},
+{"source":39,"target":49,"value":1},
+{"source":39,"target":51,"value":110},
+{"source":39,"target":52,"value":25}, 
+
+//second animal product to food, processing, feed, other and waste
+{"source":40,"target":48,"value":132},
+{"source":40,"target":51,"value":46},
+{"source":40,"target":52,"value":2}, 
+
+//third animal product to food, processing, feed, other and waste
+{"source":41,"target":49,"value":-0.001},
+{"source":41,"target":51,"value":718.595}, 
+{"source":41,"target":52,"value":17.744}, 
+
+//fourth animal product to food, processing, feed, other and waste
+{"source":42,"target":48,"value":29193},
+{"source":42,"target":49,"value":50},
+{"source":42,"target":50,"value":4409},
+{"source":42,"target":51,"value":300},
+{"source":42,"target":52,"value":1175}, 
+
+//fifth animal product to food, processing, feed, other and waste
+{"source":43,"target":48,"value":1984},
+{"source":43,"target":51,"value":22},
+{"source":43,"target":52,"value":119}, 
+
+//sixth animal product to food, processing, feed, other and waste
+{"source":44,"target":48,"value":97},
+
+//seventh animal product to food, processing, feed, other and waste
+{"source":45,"target":49,"value":0.895},
+{"source":45,"target":51,"value":264.826},
+
+//eight animal product to food, processing, feed, other and waste
+{"source":46,"target":51,"value":4.81},
+
+//send all animal processing to food 
+{"source":49,"target":48,"value":51.894}, 
+
+//imports of non processed crops 
+{"source":53,"target":6,"value":95354},
+{"source":53,"target":7,"value":18401},
+{"source":53,"target":8,"value":35967},
+{"source":53,"target":9,"value":2153},
+{"source":53,"target":10,"value":3031},
+{"source":53,"target":11,"value":34032},
+{"source":53,"target":12,"value":68200},
+{"source":53,"target":13,"value":865},
+{"source":53,"target":14,"value":11128},
+{"source":53,"target":15,"value":538},
+{"source":53,"target":16,"value":1268.933},
+{"source":53,"target":17,"value":1979.623},
+{"source":53,"target":18,"value":1951.927}, 
+
+//imports of non processed animal products 
+{"source":53,"target":39,"value":20560},
+{"source":53,"target":40,"value":2458},
+{"source":53,"target":41,"value":1658.969},
+{"source":53,"target":42,"value":54927},
+{"source":53,"target":43,"value":1441},
+{"source":53,"target":44,"value":263},
+{"source":53,"target":45,"value":271.882},
+{"source":53,"target":46,"value":5.34},
+
+//exports of non processed crops 
+{"source":6,"target":54,"value":140252},
+{"source":7,"target":54,"value":18896},
+{"source":8,"target":54,"value":17963},
+{"source":9,"target":54,"value":2222},
+{"source":10,"target":54,"value":1689},
+{"source":11,"target":54,"value":31492},
+{"source":12,"target":54,"value":44530},
+{"source":13,"target":54,"value":1140},
+{"source":14,"target":54,"value":5949},
+{"source":15,"target":54,"value":298},
+{"source":16,"target":54,"value":599.107},
+{"source":17,"target":54,"value":1474.809},
+{"source":18,"target":54,"value":386.891},
+
+//exports of non processed animal products 
+{"source":39,"target":54,"value":22720},
+{"source":40,"target":54,"value":2791},
+{"source":41,"target":54,"value":1780.148},
+{"source":42,"target":54,"value":71827},
+{"source":43,"target":54,"value":1799},
+{"source":44,"target":54,"value":125},
+{"source":45,"target":54,"value":187.82},
+{"source":45,"target":54,"value":1.271},
+
+//imports of processed products  
+{"source":55,"target":34,"value":26440},
+{"source":55,"target":35,"value":42554.345},
+{"source":55,"target":36,"value":24901.072},
+{"source":55,"target":37,"value":19404},
+
+//exports of processed products
+{"source":34,"target":56,"value":19772},
+{"source":35,"target":56,"value":19079.995},
+{"source":36,"target":56,"value":16459.409},
+{"source":37,"target":56,"value":23305}
+
+]}

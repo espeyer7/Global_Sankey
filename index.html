@@ -30,32 +30,12 @@
 
 <p id="chart"></p>
 
-
-<<<<<<< HEAD
-<h1>World Food and Commodity Flows</h1>
-
-<p id="chart"></p>
-
-
-<aside>Drag to rearrange nodes.</aside>
-
-
-Based on work by <a href="http://github.com/DanielJWood" rel="author">Dan Wood</a> and <a href="http://bost.ocks.org/mike/sankey/" rel="author">Mike Bostock</a> using the <a href="http://d3js.org" rel="author">D3 Sankey plugin</a>.
-
-<p>By Emily Speyer | Metabolic | Summer 2015</p>
-
-=======
->>>>>>> origin/gh-pages
 <script src="http://d3js.org/d3.v2.min.js?2.9.1"></script>
 <script src="sankey.js"></script>
 <script>
 var margin = {top: 1, right: 1, bottom: 6, left: 1},
     width = 2000 //- margin.left - margin.right,
-<<<<<<< HEAD
-    height = 900 //- margin.top - margin.bottom;
-=======
     height = 1414 //- margin.top - margin.bottom;
->>>>>>> origin/gh-pages
 var formatNumber = d3.format(",.3r"),
     format = function(d) { return formatNumber(d) + " TWh"; },
     color = d3.scale.category20();
@@ -68,7 +48,7 @@ var sankey = d3.sankey()
     //.nodeWidth(15)
     .nodeWidth(15*5)
     //.nodePadding(20)
-    .nodePadding(80)
+    .nodePadding(60)
     .size([width, height]);
 var path = sankey.link();
 d3.json("data.json", function(energy) {
@@ -134,8 +114,4 @@ d3.json("data.json", function(energy) {
 });
 
 
-<<<<<<< HEAD
 </script>
-=======
-</script>
->>>>>>> origin/gh-pages
